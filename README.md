@@ -179,6 +179,3 @@ Feedstock Maintainers
 * [@NateAM](https://github.com/NateAM/)
 * [@kbrindley](https://github.com/kbrindley/)
 
-
-<!-- dummy commit to enable rerendering -->
-
