@@ -47,7 +47,7 @@ test:
     - {{ compiler('cxx') }}
     - make
     - cmake >=3.18
-    - boost >=1.59
+    - libboost-python-devel >=1.82
     - doxygen
     - sphinx >=3.0.4
     - tardigrade_error_tools >=0.9.7
