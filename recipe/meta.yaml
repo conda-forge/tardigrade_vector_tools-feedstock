@@ -36,7 +36,7 @@ requirements:
     - setuptools >=62
     - setuptools_scm >=6.2
     - eigen >=3.3.7
-    - boost >=1.59
+    - libboost-python-devel >=1.82
     - doxygen
   run:
     - python
