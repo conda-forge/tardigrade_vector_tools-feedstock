@@ -30,6 +30,7 @@ requirements:
     - doxygen
     - tardigrade_error_tools >=0.9.7
   host:
+    - python
     - breathe >=4.3.0
     - sphinx >=3.0.4
     - sphinx_rtd_theme >=0.4.3
