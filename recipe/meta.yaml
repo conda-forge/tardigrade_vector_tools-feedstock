@@ -23,7 +23,7 @@ build:
 requirements:
   build:
     - python
-    - {{ compiler('c') }}  # TODO: Remove when the upstream project updates the CMakeLists.txt file
+    - {{ compiler('c') }}  # TODO: Remove when upstream project CMakeLists.txt file sets ``LANGUAGE CXX``
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - make
@@ -38,7 +38,7 @@ requirements:
     - sphinxcontrib-bibtex
     - tardigrade_error_tools >=0.9.7
   host:
-    - setuptools_scm >=6.2
+    - setuptools_scm >=6.2  # TODO: Remove when upstream project CMakeLists.txt file prefers $BUILD_PREFIX/python
     - eigen >=3.3.7
     - tardigrade_error_tools >=0.9.7
   run:
