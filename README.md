@@ -11,7 +11,7 @@ Summary: A collection of tools for vector manipulation
 
 Development: https://github.com/UCBoulder/tardigrade_vector_tools
 
-tardigrade_vector_tools A collection of tools for C++ that make interfacing with vectors easier
+tardigrade-vector-tools A collection of tools for C++ that make interfacing with vectors easier
 and less prone to error. These tools also allow the user access to the powerful Eigen library which provides matrix
 utilities in such a way that Eigen does not need to be used explicitly in the user's code.
 
@@ -38,6 +38,20 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26859&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tardigrade_vector_tools-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26859&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tardigrade_vector_tools-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26859&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tardigrade_vector_tools-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
