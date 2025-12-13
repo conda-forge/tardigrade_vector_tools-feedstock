@@ -11,7 +11,7 @@ Summary: A collection of tools for vector manipulation
 
 Development: https://github.com/UCBoulder/tardigrade_vector_tools
 
-tardigrade_vector_tools A collection of tools for C++ that make interfacing with vectors easier
+tardigrade-vector-tools A collection of tools for C++ that make interfacing with vectors easier
 and less prone to error. These tools also allow the user access to the powerful Eigen library which provides matrix
 utilities in such a way that Eigen does not need to be used explicitly in the user's code.
 
