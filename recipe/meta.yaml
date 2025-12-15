@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 6415f2b12b6c89fc27d3ca87e8ee3ca6bd60f7c8141f765938e1e6a94309c3a9
 
 build:
   number: 0
