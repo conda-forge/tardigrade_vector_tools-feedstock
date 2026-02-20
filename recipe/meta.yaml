@@ -10,7 +10,7 @@ source:
   sha256: cb66baab5fd5265f9b94d2d3b27a80183711c3705dbf5c7f491262553fddf0ca
 
 build:
-  number: 0
+  number: 1
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
@@ -19,6 +19,8 @@ build:
     - cmake -S . -B build -DCMAKE_BUILD_TYPE=Release ${CMAKE_ARGS}  # ``${CMAKE_ARGS}`` required by conda-forge recipe
     - cmake --install build --prefix ${PREFIX}
   skip: true  # [win]
+  run_exports:
+    - {{ pin_subpackage(name|lower, max_pin='x.x') }}
 
 requirements:
   build:
@@ -43,7 +45,6 @@ requirements:
     - tardigrade_error_tools >=0.9.7
   run:
     - eigen >=3.3.7
-    - tardigrade_error_tools >=0.9.7
 
 test:
   requires:
