@@ -1,5 +1,5 @@
 {% set name = "tardigrade_vector_tools" %}
-{% set version = "0.8.9" %}
+{% set version = "0.8.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: cb66baab5fd5265f9b94d2d3b27a80183711c3705dbf5c7f491262553fddf0ca
+  sha256: 4b5e416d737fb5dd3639c4f76556cc1881e8e302367dbe904f07d352f8c11972
 
 build:
-  number: 1
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
@@ -42,6 +42,7 @@ requirements:
   host:
     - setuptools_scm >=6.2  # TODO: Remove when upstream project CMakeLists.txt file prefers $BUILD_PREFIX/python
     - eigen >=3.3.7
+    - eigen-abi-devel
     - tardigrade_error_tools >=0.9.7
   run:
     - eigen >=3.3.7
