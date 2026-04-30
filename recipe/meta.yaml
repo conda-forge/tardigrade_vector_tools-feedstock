@@ -1,5 +1,5 @@
 {% set name = "tardigrade_vector_tools" %}
-{% set version = "0.8.11" %}
+{% set version = "0.8.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 083e0fb0e9ffb9fdf9bbf8fdaa0e0c17a1a2e105ec06a187f933f9e5cae6b380
+  sha256: 019cd5523028768b35bf043446ff5d4ea191aa613a4c1dfb23f70868096938fc
 
 build:
-  number: 1
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
